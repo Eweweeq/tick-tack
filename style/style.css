@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+.background{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:url("../img/bg.jpg") center/cover no-repeat;
+}
+.wrap{
+    width: 300px;
+    border: 1px solid white;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    background: darkslategray;
+}
+
+.square{
+    width: 99px;
+    height: 99px;
+    border: 1px solid black;
+    position: relative;
+    cursor: pointer;
+}
+
+.square:hover{
+    background: rgba(255, 255, 255, .1);
+
+}
+
+.square img{
+    width: 80%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.turn-text, .win-text{
+    font-size: 30px;
+    color: red;
+    margin: 20px  0;
+}
+
+.restart-button{
+    padding: 20px 35px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
